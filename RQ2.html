@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Getting Into The Mood</title>
+  <title>Journey</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +24,11 @@
 </head>
 
 <body>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Music Magazine</a>
+      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -35,10 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="index.html">Getting Into The Mood</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
+            <a class="nav-link" href="journey.html">Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="results.html">Discovery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reflection.html">Reflection</a>
           </li>
         </ul>
       </div>
@@ -46,13 +53,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/music.jpg')">
+  <header class="masthead" style="background-image: url('img/neural_net.png')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Your Music Newsfeed</h1>
+          <div class="page-heading">
+            <h1>Journey</h1>
+            <span class="subheading">Sometimes, one can be surprised at what one finds along the way.</span>
           </div>
         </div>
       </div>
@@ -60,102 +68,53 @@
   </header>
 
   <!-- Main Content -->
-  <!-- <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
-            </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr>
-        Pager 
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
+<p>
+  <h4><i>Let us find the answer for the first question:</i></h4><b>What is the best genre to make a comeback?</b>
+</p>
+        <p>We first combine all the data that we will be needing to answer the research questions. Then, we check the data for
+          null values. We found that there are missing values in the year, label, author type and year. So we eliminated these
+          null values by replacing it with the “unknown” value.
+        </p>
+        <p>We then checked the distribution of scores and found out that there is an average score of 7.03 scores.
+        </p>
+        <img src="img/distribution_scores.png" alt="Picture Failed to Load" width="500" height="400"><br>
+        <p>Then we checked the distribution of genres and found out that the majority of the albums that was rated is of the
+          rock genre. There might be a slight indication of a bias here.
+        </p>
+<img src="img/distribution_genre.png" alt="Picture Failed to Load" width="500" height="400"><br>
+        <p>The next step that we did was we looked at each genre individually and looked at how many reviews were made per year
+          in each genre, from the year 2000 to 2016.
+        </p>
+        <img src="img/num_of_reviews_1.png" alt="Picture Failed to Load"><br>
+        <img src="img/num_of_reviews_2.png" alt="Picture Failed to Load"><br>
+        <p>While most of the genre had at most 200 reviews, rock’s reviews rapidly increases and electronic genre’s reviews are relatively high.</p>
+        <p>We tried to look at the publishing year of these genres in the year 2016 and found out that rock was the most published genre, followed by the electronic genre.</p>
+<img src="img/publishing_year.png" alt="Picture Failed to Load" width="290" height="300"><br>
+        <p>So instead, we took the count of the scores of the review that are higher than the mean.</p>
+        <img src="img/scores_higherthan_mean.png" alt="Picture Failed to Load"><br>
+        <img src="img/scores_higherthan_mean_2.png" alt="Picture Failed to Load"><br>
+        <p>Looking again at the number of songs that were published in the year 2016, but this time the ones with the scores
+          greater than the mean of all scores.</p>
+<img src="img/score_greaterthan_mean.png" alt="Picture Failed to Load" width="290" height="300"><br>
+        <p>Surprise surprise: the top 3 genres did not change.</p>
+        <p>Then we took the count of the scores of the review that are lower than the mean.</p>
+        /**insert images*/
+        <p>Since the data are not evenly distributed, we took the percentage of the reviews which had scored higher than the
+          mean per genre.
+        </p>
+        <img src="img/percentagereviews_scored_higherthan_mean.png" alt="Picture Failed to Load" width="800" height="200"><br>
+        <p>So we found out that jazz had the highest percentage of scores which are higher than the mean score All-time
+          (2000-2016) and in 2016 alone. It is followed by global music.
+          We can also consider the fact that there was an outburst of a release of rock music so it may mean that the rock
+          genre is a potential one can tap into as it has a growing audience, ergo, market.
+        </p>
+        <br>
       </div>
     </div>
-  </div> -->
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-20 mx-auto">
-      <p>
-              <div class = "row">
-                  <div class = "col-md-6">
-                      <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="q1_header_image.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">1. <b>What is the best genre to make a comeback?</b></h5>
-                          <p class="card-text">Considering the reviews of the people, what genre should you specialise in
-                            so that you will not flop in your comeback due to fierce competition?</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                  </div>
-                <div class = "col-md-6">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="q2_header_image.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Album Insights</h5>
-                    <p class="card-text"> What are the highest rated albums in each genre, more so in the highest rated ones? How do record labels affect the performance of an album? </p>
-                    <a href="RQ2.html" class="btn btn-primary">Read More</a>
-                  </div>
-                </div>
-              </div>
-                
-            
-      </p>
-    </div>
   </div>
-</div>
 
   <hr>
 
