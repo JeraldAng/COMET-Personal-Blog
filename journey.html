@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Journey</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Getting Into The Mood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="journey.html">Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="results.html">Discovery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reflection.html">Reflection</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/neural_net.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Journey</h1>
+            <span class="subheading">Sometimes, one can be surprised at what one finds along the way.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+<p>
+  <h4><i>Let us find the answer for the first question:</i></h4><b>What is the best genre to make a comeback?</b>
+</p>
+        <p>We first combine all the data that we will be needing to answer the research questions. Then, we check the data for
+          null values. We found that there are missing values in the year, label, author type and year. So we eliminated these
+          null values by replacing it with the “unknown” value.
+        </p>
+        <p>We then checked the distribution of scores and found out that there is an average score of 7.03 scores.
+        </p>
+        <img src="img/distribution_scores.png" alt="Picture Failed to Load" width="500" height="400"><br>
+        <p>Then we checked the distribution of genres and found out that the majority of the albums that was rated is of the
+          rock genre. There might be a slight indication of a bias here.
+        </p>
+<img src="img/distribution_genre.png" alt="Picture Failed to Load" width="500" height="400"><br>
+        <p>The next step that we did was we looked at each genre individually and looked at how many reviews were made per year
+          in each genre, from the year 2000 to 2016.
+        </p>
+        <img src="img/num_of_reviews_1.png" alt="Picture Failed to Load"><br>
+        <img src="img/num_of_reviews_2.png" alt="Picture Failed to Load"><br>
+        <p>While most of the genre had at most 200 reviews, rock’s reviews rapidly increases and electronic genre’s reviews are relatively high.</p>
+        <p>We tried to look at the publishing year of these genres in the year 2016 and found out that rock was the most published genre, followed by the electronic genre.</p>
+<img src="img/publishing_year.png" alt="Picture Failed to Load" width="290" height="300"><br>
+        <p>So instead, we took the count of the scores of the review that are higher than the mean.</p>
+        <img src="img/scores_higherthan_mean.png" alt="Picture Failed to Load"><br>
+        <img src="img/scores_higherthan_mean_2.png" alt="Picture Failed to Load"><br>
+        <p>Looking again at the number of songs that were published in the year 2016, but this time the ones with the scores
+          greater than the mean of all scores.</p>
+<img src="img/score_greaterthan_mean.png" alt="Picture Failed to Load" width="290" height="300"><br>
+        <p>Surprise surprise: the top 3 genres did not change.</p>
+        <p>Then we took the count of the scores of the review that are lower than the mean.</p>
+        /**insert images*/
+        <p>Since the data are not evenly distributed, we took the percentage of the reviews which had scored higher than the
+          mean per genre.
+        </p>
+        <img src="img/percentagereviews_scored_higherthan_mean.png" alt="Picture Failed to Load" width="800" height="200"><br>
+        <p>So we found out that jazz had the highest percentage of scores which are higher than the mean score All-time
+          (2000-2016) and in 2016 alone. It is followed by global music.
+          We can also consider the fact that there was an outburst of a release of rock music so it may mean that the rock
+          genre is a potential one can tap into as it has a growing audience, ergo, market.
+        </p>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/ErikaChan/few_chan_chan_ching">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Revival 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+<div id="disqus_thread"></div>
+<script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function () { // DON'T EDIT BELOW THIS LINE
+    var d = document,
+      s = d.createElement('script');
+    s.src = 'https://revival-3.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</body>
+
+</html>
