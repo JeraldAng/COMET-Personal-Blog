@@ -75,46 +75,58 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 <p>
-  <h4><i>Let us find the answer for the first question:</i></h4><b>What is the best genre to make a comeback?</b>
+  <h4><i>Let us find the answer for the first question:</i></h4><b>What genre(s) would you recommend to a young musician to focus on for their upcoming song/album? Why?</b>
 </p>
-        <p>We first combine all the data that we will be needing to answer the research questions. Then, we check the data for
-          null values. We found that there are missing values in the year, label, author type and year. So we eliminated these
-          null values by replacing it with the “unknown” value.
+        <p>
+            Music can be recorded and reproduced by machines. However, it has effects that science cannot fully quantify yet. 
+            Music can make a sad person feel happy or sad; it can invoke a person to feel. Because of its unique qualities, music 
+            had become an industry -a very lucrative one. People who consider to enter it are not stupid; the music career may be one 
+            of the few careers that machines will never fully conquer. Machines can produce sounds and qualities that humans can never produce; 
+            but it still requires a human to give it at least some starting directions, algorithms, and pieces to process from. However, 
+            there is really a considerable competition in this industry. Nonetheless, having an edge over the other artists could make 
+            a big difference. One of the edges that an artist can have is the genre that they will focus on. Thus here comes our question:
+             which genre would work best for a young musician to use?
         </p>
-        <p>We then checked the distribution of scores and found out that there is an average score of 7.03 scores.
+        <p>
+          We took a dataset from Kaggle (18, 393 Pitchfork Reviews) and cleaned it. 
+          Now the dataset is ready to be processed. First, we checked the average score of 
+          each music genre per year from 2007 to 2017 (; the latest record in the dataset is 2017). 
+          Since music trends change quite fast, we did not look too far back. 
         </p>
-        <img src="img/distribution_scores.png" alt="Picture Failed to Load" width="500" height="400"><br>
-        <p>Then we checked the distribution of genres and found out that the majority of the albums that was rated is of the
-          rock genre. There might be a slight indication of a bias here.
+        <p style="text-align:center">
+            <img src="img/average_genre.png" alt="Picture Failed to Load" width="800" height="140">
+            <br><font size= "-1">Figure 1. Averages of Genres</font><br><br>
         </p>
-<img src="img/distribution_genre.png" alt="Picture Failed to Load" width="500" height="400"><br>
-        <p>The next step that we did was we looked at each genre individually and looked at how many reviews were made per year
-          in each genre, from the year 2000 to 2016.
+        <p>
+            We then got the average of each genre for their averages from the years 2007-2017. It turns out that the one 
+            who scored the highest is the experimental genre. This is not a surprise as people would opt to go for things 
+            that are fresh to them when it comes to entertainment. And the music industry is about entertainment [1] [2]. 
+            When the averages are pitted against each other per year, the experimental and global music are the ones that scored 
+            the highest. Global music is quite similar to experimental music, both are unique to the occidental world and many other 
+            parts of the world.
         </p>
-        <img src="img/num_of_reviews_1.png" alt="Picture Failed to Load"><br>
-        <img src="img/num_of_reviews_2.png" alt="Picture Failed to Load"><br>
-        <p>While most of the genre had at most 200 reviews, rock’s reviews rapidly increases and electronic genre’s reviews are relatively high.</p>
-        <p>We tried to look at the publishing year of these genres in the year 2016 and found out that rock was the most published genre, followed by the electronic genre.</p>
-<img src="img/publishing_year.png" alt="Picture Failed to Load" width="290" height="300"><br>
-        <p>So instead, we took the count of the scores of the review that are higher than the mean.</p>
-        <img src="img/scores_higherthan_mean.png" alt="Picture Failed to Load"><br>
-        <img src="img/scores_higherthan_mean_2.png" alt="Picture Failed to Load"><br>
-        <p>Looking again at the number of songs that were published in the year 2016, but this time the ones with the scores
-          greater than the mean of all scores.</p>
-<img src="img/score_greaterthan_mean.png" alt="Picture Failed to Load" width="290" height="300"><br>
-        <p>Surprise surprise: the top 3 genres did not change.</p>
-        <p>Then we took the count of the scores of the review that are lower than the mean.</p>
-        /**insert images*/
-        <p>Since the data are not evenly distributed, we took the percentage of the reviews which had scored higher than the
-          mean per genre.
+        <p>
+            Perhaps you have heard of the Bohemian Rhapsody. It is a song that is considerably long, and yet it still is considered 
+            as a timeless favorite. For its time, it is considered to be a shocking song; no song before had incorporated such number
+             of styles into one song. It is so fresh that it has remained alive throughout the years. Funny thing is, its lyrics have
+              abstract meaning. However, the younger generation today still embraces it [3]. Another case would be the One Winged Angel
+               -it is a track used in the game Final Fantasy VII. It is just another song used in a video game; one of many. But, it is 
+               unique for its kind; because of that, the track is considered to be quite famous among the many other songs from the Final
+                Fantasy Franchise [4]. Bottomline is, the more unique a song is, the bigger the impression it can leave on its listeners. 
+                (The impression can be a good or a bad one; but when it comes to the entertainment industry, the fame is all that matters.)
+                 According to other studies, music that are more bouncy do better in the market than the traditional mellow or sad songs. According 
+                 to the article, funky songs do not only impress people; it appeals much to them as it seemingly can lift the listeners’ moods [1]. 
+                 Global music is pretty much new to countries in Europe and China. Thus, this genre can fish plenty of audience as well [5].
         </p>
-        <img src="img/percentagereviews_scored_higherthan_mean.png" alt="Picture Failed to Load" width="800" height="200"><br>
-        <p>So we found out that jazz had the highest percentage of scores which are higher than the mean score All-time
-          (2000-2016) and in 2016 alone. It is followed by global music.
-          We can also consider the fact that there was an outburst of a release of rock music so it may mean that the rock
-          genre is a potential one can tap into as it has a growing audience, ergo, market.
+        <hr>
+        <p>
+          REFERENCES
         </p>
-        <br>
+      <p>[1] Musical trends and predictability of success in contemporary songs in and out of the top charts (2019). Royalsocietypublishing.org. Retrieved 4 March 2019, from <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.171274#d3e1446">https://royalsocietypublishing.org/doi/full/10.1098/rsos.171274#d3e1446</a></p>
+      <p>[2] What Does “Experimental Music” Even Mean Anymore? . (2018). The FADER. Retrieved 4 March 2019, from <a href="https://www.thefader.com/2015/05/08/system-focus-experimental-music">https://www.thefader.com/2015/05/08/system-focus-experimental-music</a></p>
+      <p>[3] 'Bohemian Rhapsody': The 6-minute rock single that changed the face of music. (2019). Business Insider. Retrieved 4 March 2019, from <a href="https://www.businessinsider.com/bohemian-rhapsody-queen-greatest-song-written-freddie-mercury-2018-10">https://www.businessinsider.com/bohemian-rhapsody-queen-greatest-song-written-freddie-mercury-2018-10</a></p>
+      <p>[4] One-Winged Angel (theme). (2019). Final Fantasy Wiki. Retrieved 4 March 2019, from <a href="https://finalfantasy.fandom.com/wiki/One-Winged_Angel_(theme)">https://finalfantasy.fandom.com/wiki/One-Winged_Angel_(theme)</a></p>
+      <p>[5] M. Irondelle, World music, music of the world or global music?, Forum d'Avignon, 2015. [Online]. Available: <a href="http://www.forum-avignon.org/en/contribution-world-music-music-world-or-global-music-melodie-irondelle.">http://www.forum-avignon.org/en/contribution-world-music-music-world-or-global-music-melodie-irondelle.</a> [Accessed: 01-Feb-2019].</p>
       </div>
     </div>
   </div>
