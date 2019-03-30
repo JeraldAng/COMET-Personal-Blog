@@ -88,6 +88,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+img.corr {
+  vertical-align: -webkit-baseline-middle;
+}
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
